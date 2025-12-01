@@ -119,9 +119,10 @@ async def run_mediscreen():
             current_agent_name = "IntakeCoordinator"
             full_conversation_log = []
 
-            print("\n" + "="*50)
-            print("🏥  MEDISCREEN AI  |  System Online")
-            print("="*50 + "\n")
+            print("\n" + "="*80)
+            print("🏥  MEDISCREEN AI  ")
+            print("You are connected with MediScreen AI. To exit, type 'quit' or 'exit'.")
+            print("="*80 + "\n")
 
             # --- 2. WARM START (Auto-Introduction) ---
             # We send a hidden instruction to the agent to make it speak first.

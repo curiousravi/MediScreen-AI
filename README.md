@@ -64,7 +64,7 @@ MediScreen AI uses a Hub-and-Spoke Multi-Agent Architecture powered by the Model
 
 **Clinical Scribe:** A back-office agent that synthesizes raw chat logs into professional medical notes using Context Engineering.
 
-![Agent-Interaction Flow, Mermaid Diagram] (/assets/MediScreen_AgentInteractionFlow_mermaid.png)
+![Agent-Interaction Flow, Mermaid Diagram](/assets/MediScreen_AgentInteractionFlow_mermaid.png)
 ---
 
 
