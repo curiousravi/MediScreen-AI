@@ -27,6 +27,7 @@ An AI-powered intake system that fights physician burnout and empowers patients.
 ## 📖 Overview
 
 ### The Problem
+When you visit a walk-in or Family Clinic, there are cases of significant wait times. Doctors get barely 15 minutes to see the patient with very less time to gather complete information, history and assessment.
 Doctors currently spend up to 50% of their time on data entry and basic history gathering. When they try to save time by conversing directly with patients, they may lose track of important information needed to maintain proper medical histories. This leads to:
 - Physician burnout
 - Incomplete or incorrect information storage
