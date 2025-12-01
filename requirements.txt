@@ -1,0 +1,6 @@
+google-adk
+mcp[cli]
+python-dotenv
+google-cloud-aiplatform
+absl-py
+sqlalchemy

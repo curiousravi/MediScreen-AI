@@ -1,0 +1,92 @@
+{
+  "PT-1001": {
+    "name": "Jane Doe",
+    "dob": "1979-05-12",
+    "gender": "Female",
+    "conditions": ["Type 2 Diabetes", "Hypertension"],
+    "medications": ["Metformin 500mg", "Lisinopril 10mg"],
+    "allergies": ["Penicillin (Anaphylaxis)", "Latex"],
+    "last_visit": "2024-10-15"
+  },
+  "PT-1002": {
+    "name": "John Smith",
+    "dob": "1995-08-22",
+    "gender": "Male",
+    "conditions": ["Asthma"],
+    "medications": ["Albuterol Inhaler (PRN)"],
+    "allergies": ["Peanuts"],
+    "last_visit": "2024-11-01"
+  },
+  "PT-1003": {
+    "name": "Emily Chen",
+    "dob": "1955-03-10",
+    "gender": "Female",
+    "conditions": ["Osteoarthritis", "Hyperlipidemia"],
+    "medications": ["Atorvastatin 20mg", "Celecoxib 200mg"],
+    "allergies": [],
+    "last_visit": "2024-09-20"
+  },
+  "PT-1004": {
+    "name": "Michael Brown",
+    "dob": "1988-11-30",
+    "gender": "Male",
+    "conditions": [],
+    "medications": [],
+    "allergies": ["Sulfa Drugs"],
+    "last_visit": "2023-01-10"
+  },
+  "PT-1005": {
+    "name": "Sarah Connor",
+    "dob": "1990-02-14",
+    "gender": "Female",
+    "conditions": ["Generalized Anxiety Disorder"],
+    "medications": ["Sertraline 50mg"],
+    "allergies": [],
+    "last_visit": "2024-11-15"
+  },
+  "PT-1006": {
+    "name": "Robert Baratheon",
+    "dob": "1970-06-18",
+    "gender": "Male",
+    "conditions": ["Gout", "Obesity"],
+    "medications": ["Allopurinol 100mg"],
+    "allergies": ["Shellfish"],
+    "last_visit": "2024-08-05"
+  },
+  "PT-1007": {
+    "name": "Diana Prince",
+    "dob": "1992-01-01",
+    "gender": "Female",
+    "conditions": [],
+    "medications": [],
+    "allergies": [],
+    "last_visit": "2024-05-20"
+  },
+  "PT-1008": {
+    "name": "Bruce Wayne",
+    "dob": "1980-02-19",
+    "gender": "Male",
+    "conditions": ["Chronic Back Pain", "Insomnia"],
+    "medications": ["Melatonin"],
+    "allergies": ["Codeine"],
+    "last_visit": "2024-10-30"
+  },
+  "PT-1009": {
+    "name": "Peter Parker",
+    "dob": "2001-08-10",
+    "gender": "Male",
+    "conditions": [],
+    "medications": [],
+    "allergies": ["Spider Bites (Mild reaction)"],
+    "last_visit": "2024-06-15"
+  },
+  "PT-1010": {
+    "name": "Natasha Romanoff",
+    "dob": "1984-11-22",
+    "gender": "Female",
+    "conditions": ["Endometriosis"],
+    "medications": ["Ibuprofen 600mg"],
+    "allergies": [],
+    "last_visit": "2024-11-10"
+  }
+}
