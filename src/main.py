@@ -148,11 +148,22 @@ async def run_mediscreen():
 
                 # --- 4. EMPTY INPUT HANDLING ---
                 if not user_input.strip():
-                    print(f"\n{current_agent_name}: I didn't catch that. Please type your response.\n")
+                    # If the user enters nothing, check if the LLM has already spoken
+                    last_agent_message = next((msg.split(": ")[-1] for msg in reversed(full_conversation_log) if not msg.startswith("Patient")), "")
+                    
+                    if "thank you," in last_agent_message.lower() and "main reason" in last_agent_message.lower():
+                        # The agent has already asked the next question, so just remind the user.
+                        print(f"\n{current_agent_name}: I didn't catch that. Please share the main reason for your visit.\n")
+                    else:
+                        # If the agent hasn't responded yet (likely due to an ongoing tool call), 
+                        # just tell the user to wait and continue the loop without submitting an empty message.
+                        print(f"\n{current_agent_name}: Just a moment, I'm processing your Patient ID. Please wait few seconds or re-enter your ID.\n")
+                    
+                    #print(f"\n{current_agent_name}: I didn't catch that. Please type your response.\n")
                     continue
                 
                 if user_input.lower() in ["quit", "exit"]:
-                    print("\nClosing Session. Goodbye!")
+                    print("\n Thanks for using MediScreen AI. Closing Session. Goodbye!")
                     break
                 
                 full_conversation_log.append(f"Patient: {user_input}")
@@ -186,9 +197,10 @@ async def run_mediscreen():
                         # Use regex or a simple split to find the ID (e.g., PT-1004)
                         import re
                         match = re.search(r'(PT-\d+)', last_user_input, re.IGNORECASE)
+                        
                         if match:
                             # --- UPDATE THE DYNAMIC ID ---
-                            #CURRENT_PATIENT_ID = match.group(0).upper()
+                            
                             CURRENT_PATIENT_ID = match.group(0).upper()
                             system_log.info(f"Patient ID successfully extracted and set to: {CURRENT_PATIENT_ID}")
                     
