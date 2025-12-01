@@ -50,18 +50,9 @@ MediScreen AI is a multi-agent system that acts as a "pre-visit" medical screene
 
 MediScreen AI uses a Hub-and-Spoke Multi-Agent Architecture powered by the Model Context Protocol (MCP).
 
-![MediScreen AI Architecture](assets/architecture.png)
+![MediScreen AI architecture diagram showing a hub-and-spoke multi-agent system: primary subjects are a Patient (User), an Intake Coordinator Agent, a Symptom Specialist Agent, a History Archivist Agent, a Patient Data Server labeled MCPServer, a Clinical Scribe Agent, and a Doctor reviewing the output. The Patient chats with the Intake Coordinator Agent (label Chat). The Intake Coordinator delegates interviews to the Symptom Specialist Agent (label Delegates Interview) and fetches records from the History Archivist Agent (label Fetches Data). The History Archivist connects to the Patient Data Server via the Model Context Protocol MCP (label MCP Protocol). The Intake sends raw logs to the Clinical Scribe (label Sends Raw Logs). The Clinical Scribe returns a SOAP Note for the Doctor to review (label Returns SOAP Note). The image is a schematic flowchart with labeled boxes and directional arrows, set in a clinical technical environment with a professional, informative tone.](/assets/MediScreen_Arch_light.jpg)
 
 
-```mermaid
-graph TD
-    User[Patient] <-->|Chat| Intake[Intake Coordinator Agent]
-    Intake <-->|Delegates Interview| Symptom[Symptom Specialist Agent]
-    Intake <-->|Fetches Data| History[History Archivist Agent]
-    History <-->|MCP Protocol| MCPServer[Patient Data Server]
-    Intake -->|Sends Raw Logs| Scribe[Clinical Scribe Agent]
-    Scribe -->|Returns SOAP Note| Doctor to review
-```
 
 ### The Agent Team
 
@@ -73,7 +64,9 @@ graph TD
 
 **Clinical Scribe:** A back-office agent that synthesizes raw chat logs into professional medical notes using Context Engineering.
 
+![Agent-Interaction Flow, Mermaid Diagram] (/assets/MediScreen_AgentInteractionFlow_mermaid.png)
 ---
+
 
 ## 📂 Project Structure
 
