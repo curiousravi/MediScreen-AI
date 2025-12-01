@@ -1,0 +1,17 @@
+MediScreen AI
+Copyright 2025 MediScreen AI Contributors
+
+This product includes software developed as part of the Kaggle Agents Intensive 
+Capstone project (Agents for Good Track).
+
+This software is provided for research and educational purposes only and is NOT 
+intended for clinical use, medical diagnosis, or as a medical device.
+
+Third-Party Components:
+- Google Gemini API (separate terms apply)
+- Model Context Protocol (MCP) - see https://modelcontextprotocol.io
+- Other dependencies as listed in requirements.txt
+
+MEDICAL DISCLAIMER:
+This software is not FDA-approved and should not be used for clinical diagnosis 
+or treatment. Always consult qualified healthcare professionals for medical advice.
