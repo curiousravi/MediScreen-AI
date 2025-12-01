@@ -137,7 +137,7 @@ This command launches both the Agent Client and the local MCP Server automatical
 
 **Demo Flow:**
 
-1. **Login:** Enter Patient ID `PT-123` (Jane Doe) or `PT-456` (John Smith)
+1. **Login:** Enter Patient ID `PT-1001` (Jane Doe) or `PT-1002` (John Smith)
 2. **Complaint:** State a symptom (e.g., "I have a migraine")
 3. **Interview:** The SymptomSpecialist will take over and ask follow-up questions
 4. **Result:** The system will generate a final S.O.A.P. Note in the terminal
@@ -147,7 +147,7 @@ This command launches both the Agent Client and the local MCP Server automatical
 ## 🌟 Features & Enhancements
 
 ### 1. Persistent Storage (SQLite)
-Patient data and session information stored locally for continuity.
+Patient data and session information stored locally for Context.
 
 ### 2. Observability & Logging
 
@@ -229,14 +229,14 @@ Contributions are welcome! Please:
 
 **Project Repository:** [https://github.com/curiousravi/MediScreen-AI](https://github.com/curiousravi/MediScreen-AI)
 
-**Questions or Issues:** Please open an issue on GitHub
+**Questions or Issues:** Please open an issue on GitHub (not actively monitored)
 
 ---
 
 ## 🙏 Acknowledgments
 
 - Built for the **Kaggle Agents Intensive Capstone** (Agents for Good Track)
-- Powered by **Google Gemini** and the **Model Context Protocol (MCP)**
+- Powered by **Google Gemini**, **Model Context Protocol (MCP)** and **Context and Observability, Logging**
 - Inspired by the need to reduce physician burnout and improve patient care
 
 ---
